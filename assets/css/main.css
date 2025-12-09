@@ -924,7 +924,7 @@ section,
   width: 12px;
   height: 12px;
   opacity: 1;
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+  background-color: #fff;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
