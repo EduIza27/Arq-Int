@@ -12,9 +12,9 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Playfair Display",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font:  "Century Gothic", "Montserrat", "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Century Gothic", "Montserrat", "Poppins", "Segoe UI", sans-serif;
+  --nav-font: "Century Gothic", "Poppins", "Montserrat", "Segoe UI", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -158,8 +158,10 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 32px;
-  margin-right: 8px;
+  max-height: 170px;   /* prueba 60 / 70 / 80 hasta que quede bien */
+  height: auto;
+  width: auto;
+  margin-right: 5px;
 }
 
 .header .logo h1 {
@@ -420,7 +422,7 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: var(--default-color);
+  color: #fff;
   background-color: var(--background-color);
   font-size: 14px;
   text-align: center;
@@ -434,6 +436,10 @@ h6 {
   position: relative;
   padding: 0;
   margin: 0 0 15px 0;
+}
+
+h3.sitename{
+  color: #fff;
 }
 
 .footer p {
@@ -476,6 +482,11 @@ h6 {
 .footer .credits {
   font-size: 13px;
   padding-top: 5px;
+}
+
+.footer {
+  background-color: #421417;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -834,6 +845,15 @@ section,
   overflow: hidden;
 }
 
+.testimonials{
+  background-color: #421417f5;
+  color: #ffffff;
+}
+
+.testimonials .section-title h2 {
+  color: #ffffff;
+}
+
 .testimonials .testimonial-item {
   text-align: center;
 }
@@ -849,11 +869,12 @@ section,
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0 5px 0;
+  color: #fff;
 }
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: #fff;
   margin: 0 0 15px 0;
 }
 
@@ -868,7 +889,7 @@ section,
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: color-mix(in srgb, var(--accent-color), transparent 50%);
+  color: #fff;
   font-size: 26px;
   line-height: 0;
 }
@@ -888,7 +909,7 @@ section,
 }
 
 .testimonials .testimonial-item p {
-  font-style: italic;
+  font-style: var(--default-font);
   margin: 0 auto 15px auto;
 }
 
@@ -905,7 +926,7 @@ section,
   width: 12px;
   height: 12px;
   opacity: 1;
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+  background-color: #fff;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
@@ -1455,9 +1476,3 @@ section,
   color: var(--accent-color);
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
