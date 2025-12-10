@@ -158,8 +158,10 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 32px;
-  margin-right: 8px;
+  max-height: 170px;   /* prueba 60 / 70 / 80 hasta que quede bien */
+  height: auto;
+  width: auto;
+  margin-right: 5px;
 }
 
 .header .logo h1 {
@@ -1474,9 +1476,3 @@ section,
   color: var(--accent-color);
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
